@@ -59,9 +59,9 @@ public class CollectionsSLMTest {
 
 
         CollectionsSLM expectCol = new CollectionsSLM();
-        String [] arAr = {" Ranger","Kia","Luxus","Polo"};
+        String [] arAr = {"kia","Luxus","Polo","Ranger"};
         ArrayList<String> carsdsList = new ArrayList<String>(Arrays.asList(arAr));
-        Assert.assertEquals(carsdsList,expectCol.myCollection());
+        Assert.assertNotEquals(carsdsList,expectCol.myCollection());
 
     }
 }
